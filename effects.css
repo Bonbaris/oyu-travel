@@ -1,0 +1,26 @@
+/* a52d26 */
+.social-networks:hover {
+    width: 30px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.slideshow {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Cities */
+.text_animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.cities__info:hover .text_animation {
+    opacity: 1;
+    transform: translateY(0);
+}
+.cities__info:hover .text_animation:nth-child(2) {
+    background-image: linear-gradient(transparent, #a52d26);
+}

@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html * {
+    max-height: 999999px;
+}
+body {
+    font-family: "Open Sans","Trebuchet MS",arial,sans-serif;
+}
+._container {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+._flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._flex__column {
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+/* Color #a52d26 */
+
+/* Header */
+.header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    box-shadow: 0px 1px 8px 0px black;
+    background-color: white;
+}
+.header__container {
+    padding: 17px 0 15px;
+    justify-content: space-between;
+}
+._logo {
+    width: 200px;
+}
+._logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+.header__body {
+    width: 100%;
+    align-items: flex-end;
+}
+
+/* Header Call */
+.header__top {
+    height: 30px;
+    gap: 10px;
+}
+.call-us {
+    background-color: #a52d26;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: white;
+    border: 1px solid transparent;
+}
+
+/* HEADER BURGER */
+.burger {
+    width: 60px;
+    height: 60px;
+    display: none;
+}
+.burger img {
+    max-width: 100%;
+}
+
+/* Header nav-list */
+.header__nav__bottom {
+    width: 100%;
+    gap: 10px;
+}
+.header__nav__list {
+    width: 100%;
+    justify-content: space-between;
+}
+.header__nav__list a {
+    margin: 0 5px;
+}
+.social-networks {
+    width: 20px;
+    margin: 5px;
+}
+/* Header break */
+.line {
+    width: 100%;
+    border: 1px solid #a52d26;
+    margin: 10px 0;
+}
+
+/* Page */
+.page {
+}
+.title {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 62px;
+    color: #151515;
+    margin-bottom: 30px;
+}
+
+/* Main */
+.page .main {
+    margin-top: 120px;
+}
+.main__container {
+    overflow: hidden;
+}
+.main__body {
+    padding: 100px 57px 120px;
+}
+.main__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 51px;
+    color: #fff;
+    margin-bottom: 28px;
+    max-width: 630px;
+}
+.main__buttons {
+    display: flex;
+    gap: 10px;
+}
+.main__buttons a {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.main__buttons a:nth-child(1){
+    background-color: #a52d26;
+}
+.main__buttons a:nth-child(2){
+    background-color: #00b2e4;
+}
+
+/* Tours */
+.tours {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.our-tours__wrapper {
+    background-color: #a52d26;
+    padding: 30px 0;
+}
+.our__tours__body{
+    flex-wrap: wrap;
+    gap: 10px;
+}
+._tours__box {
+    width: 250px;
+    background-color: white;
+    padding: 5px;
+}
+._tours__box__img>img {
+    width: 100%;
+    height: 140px;
+}
+._tours-name {
+
+}
+._tours-location{
+    color: #5c6672;
+    font-size: 12px;
+}
+._tours-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+._about-place a {
+    text-decoration: underline;
+    color: #5c6672;
+    font-size: 10px;
+    opacity: 0.7;
+}
+._price {
+    font-size: 20px;
+}
+
+/* Cities */
+.cities {
+    margin-bottom: 50px;
+}
+.cities__container {
+}
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки одинаковой ширины */
+    grid-template-rows: 1fr 1fr; /* Две строки одинаковой высоты */
+    gap: 10px; /* Расстояние между ячейками */
+}
+.city__turkestan {
+    height: 550px;
+    grid-row: 1 / span 2; /* Охватывает две строки */
+    grid-column: 1; /* Первая колонка */
+    background-image: url(images/turkestan/turkestan.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.city__almaty {
+    grid-row: 1; /* Первая строка */
+    grid-column: 2; /* Вторая колонка */
+    background-image: url(images/almaty/almaty.jpeg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.city__merki {
+    grid-row: 2; /* Вторая строка */
+    grid-column: 2; /* Вторая колонка */
+    background-image: url(images/merki/merki-mountain.jpeg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cities__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.cities__info>a,.cities__info>p {
+    padding: 20px;
+    color: white;
+}
+.cities__info>a {
+    font-size: 24px;
+    background-color: #a52d26;
+    border-radius: 15px;
+}
+
+/* About */
+.about__info p {
+    margin: 20px 0;
+    color: #5c6672;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Reviews */
+.reviews__title {
+    margin-top: 50px;
+}
+.reviews__clients {
+    height: 40vh;
+}
+.reviews__clients h1 {
+    color: #717983;
+    opacity: .5;
+}
+
+/* Contact footer*/
+.footer {
+    background-color: #151515;
+}
+.footer__container {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+.footer__main {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    color: white;
+}
+.footer__information {
+    display: flex;
+}
+.footer__information h3 {
+    margin-bottom: 10px;
+}
+.footer__information a {
+    color: white;
+    margin: 3px 0;
+}
+.footer__logo__text{
+    color: white;
+}
+.about__manager {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+.top__footer {
+    /* display: none; */
+    background-color: #a52d26;
+    border: none;
+    padding: 20px;
+    display: none;
+    justify-content:space-between;
+}
+.top__footer__text {
+    color: white;
+    text-align: center;
+}
+/* Burger */
+
+.menu__close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.close {
+    font-size: 40px;
+    font-weight: 600;
+    color: #bbb;
+}
+
+.menu__start {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.menu__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.menu__actions {
+    display: flex;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    margin-top: 10px;
+}
+.menu__actions img {
+    width: 40px;
+    height: 40px;
+}
+.menu.active {
+    transform: translateX(0);
+}.menu {
+    position: fixed;
+    z-index: 70;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 60px 40px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
